@@ -1,0 +1,57 @@
+name: DAQ
+
+measurements:
+    MILLISEC:
+      name: MILLISEC
+      size: 4
+      type: int
+      endianness: little
+      signed: false
+
+    MICROSEC:
+      name: microsec
+      size: 4
+      type: int
+      endianness: little
+      signed: false
+
+   TANK_PRESSURE:
+     NAME: TANK_PRESSURE
+     SIZE: 4
+     type: float
+     endianness: little
+
+   CHAMBER_PRESSURE:
+     NAME: CHAMBER_PRESSURE
+     SIZE: 4
+     type: float
+     endianness: little
+
+   TANK_TEMP:
+     NAME: TANK_TEMP
+     SIZE: 4
+     type: float
+     endianness: little
+
+   CHAMBER_TEMP:
+     NAME: CHAMBER_TEMP
+     SIZE: 4
+     type: float
+     endianness: little
+
+   CHAMBER_THROAT_TEMP:
+     NAME: CHAMBER_THROAT_TEMP
+     SIZE: 4
+     type: float
+     endianness: little
+
+      
+telemetry_packets:
+  - name: LiquidDAQ
+    port: 12100
+    measurements:
+      - TANK_PRESSURE
+      - TANK_TEMP
+      - CHAMBER_PRESSURE
+      - CHAMBER_TEMP
+      - CHAMBER_THROAT_TEMP
