@@ -6,42 +6,42 @@ measurements:
       size: 4
       type: int
       endianness: little
-      signed: false
+      unsigned: false
 
     MICROSEC:
-      name: microsec
+      name: MICROSEC
       size: 4
       type: int
       endianness: little
-      signed: false
+      unsigned: false
 
    TANK_PRESSURE:
-     NAME: TANK_PRESSURE
-     SIZE: 4
+     name: TANK_PRESSURE
+     size: 4
      type: float
      endianness: little
 
    CHAMBER_PRESSURE:
-     NAME: CHAMBER_PRESSURE
-     SIZE: 4
+     name: CHAMBER_PRESSURE
+     size: 4
      type: float
      endianness: little
 
    TANK_TEMP:
-     NAME: TANK_TEMP
-     SIZE: 4
+     name: TANK_TEMP
+     size: 4
      type: float
      endianness: little
 
    CHAMBER_TEMP:
-     NAME: CHAMBER_TEMP
-     SIZE: 4
+     name: CHAMBER_TEMP
+     size: 4
      type: float
      endianness: little
 
    CHAMBER_THROAT_TEMP:
-     NAME: CHAMBER_THROAT_TEMP
-     SIZE: 4
+     name: CHAMBER_THROAT_TEMP
+     size: 4
      type: float
      endianness: little
 
